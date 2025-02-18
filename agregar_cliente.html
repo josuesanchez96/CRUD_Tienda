@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Agregar Nuevo Cliente</h1>
+    
+    <form id="form-cliente">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fechaNacimiento" required>
+        </div>
+        <div class="form-group">
+            <label for="genero">Género</label>
+            <select id="genero">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" required>
+        </div>
+        <button type="submit">Guardar Cliente</button>
+        <button type="button" onclick="window.location.href='index.html'">Cancelar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
